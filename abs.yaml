@@ -1,0 +1,4 @@
+aggregate_branch: 3.12
+aggregate_check: false
+upload_channels:
+  - sfe1ed40
