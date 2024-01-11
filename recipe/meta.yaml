@@ -12,12 +12,14 @@ source:
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir --no-build-isolation -vv
 
 requirements:
   host:
     - python
     - pip
+    - wheel
+    - setuptools
   run:
     - python
 
@@ -31,7 +33,9 @@ about:
   license_family: BSD
   license_file: LICENSE
   summary: A collection of fancy functional tools focused on practicality.
-
+  description: |
+    A collection of fancy functional tools focused on practicality.
+    Inspired by clojure, underscore and my own abstractions. 
   doc_url: http://funcy.readthedocs.io/
   dev_url: https://github.com/Suor/funcy
 
