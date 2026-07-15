@@ -30,8 +30,7 @@ test:
     - funcy
   requires:
     - pip
-    - pytest 6.2.5  # [py!=310]
-    - pytest 6.2.4  # [py==310]
+    - pytest
   commands:
     - pip check
     # Skipping test modules using whatever
